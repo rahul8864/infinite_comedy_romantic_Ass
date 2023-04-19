@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
-import Footer from "./components/Footer";
-import Header from "./components/header";
+// import Footer from "./components/Footer";
+// import Header from "./components/header";
 
 export default function App() {
   const [api, setApi] = useState([]);
@@ -40,7 +40,7 @@ export default function App() {
   console.log("api data", api);
   return (
     <>
-      <Header title={headerName} />
+      {/* <Header title={headerName} /> */}
       <InfiniteScroll
         dataLength={itemCount}
         next={() => fetchMoreData()}
